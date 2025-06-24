@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammiee's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dammiee</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>  
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Dammiee</span></h1>
+            <p>A passionate <span class="typing-container"><span class="typing-text">Web Developer</span><span class="cursor"></span></span> creating digital solutions</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="20250622_0008_Selfie with Smartphone_remix_01jyabxhssexbazbm75283jzh6.png" 
+                     alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Hacker Wallpaper.jpg" alt="About Image">
+            </div>
+            <div class="about-text">
+                <p>I'm a dedicated developer with a passion for creating innovative digital solutions. With experience in both frontend and backend technologies, I strive to build applications that are both functional and user-friendly.</p>
+                <p>My journey in tech began several years ago, and since then I've worked on various projects ranging from web applications to mobile apps. I'm constantly learning and adapting to new technologies to stay at the forefront of development.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span>Name:</span>
+                        <p>Dammiee</p>
+                    </div>
+                    <div class="info-item">
+                        <span>Email:</span>
+                        <p>rachaelfun10@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span>Experience:</span>
+                        <p>2+ Years</p>
+                    </div>
+                    <div class="info-item">
+                        <span>Location:</span>
+                        <p>Cross River, Nigeria.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-item">
+                    <p>HTML/CSS</p>
+                    <div class="skill-bar">
+                       <div class="skill-level" data-percent="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                       <div class="skill-level" data-percent="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>React</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="60%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-item">
+                    <p>Node.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="60%"></div>
+                    </div>  
+                </div>
+                <div class="skill-item">
+                    <p>Python</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>Database</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="70%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other</h3>
+                <div class="skill-item">
+                    <p>UI/UX Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>Git</p>
+                    <div class="skill-bar">
+                       <div class="skill-level" data-percent="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>DevOps</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-percent="60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Project 1">
+                <div class="project-info">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online store with product listings, cart functionality, and payment processing.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Project 2">
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Project 3">
+                <div class="project-info">
+                    <h3>Weather Dashboard</h3>
+                    <p>Real-time weather information with forecasts, historical data, and interactive maps.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Dammiee is an exceptional designer who transformed our website into a masterpiece. Her attention to detail and creative approach exceeded our expectations."</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson">
+                            </div>
+                            <div class="client-details">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director at TechCorp</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Working with Dammiee was a game-changer for our brand. Her designs are not only visually stunning but also highly functional and user-friendly."</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                            </div>
+                            <div class="client-details">
+                                <h4>Michael Chen</h4>
+                                <p>CEO of InnovateX</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Dammiee's ability to capture our vision and translate it into a stunning website was impressive. Her professionalism made the entire process smooth and enjoyable."</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Emily Parker">
+                            </div>
+                            <div class="client-details">
+                                <h4>Emily Parker</h4>
+                                <p>Founder of CreativeMinds</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <div class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <div class="carousel-indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>rachaelfun10@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 (0) 9072 5220 00</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Cross River, Nigeria</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvgrwrja" method="POST">
+    <div class="form-group">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="user_email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" placeholder="Subject">
+    </div>
+    <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+    </div>
+    <a href="thank.html"><button type="submit" class="btn">Send Message</button></a>
+</form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dammiee. All rights reserved.</p>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const skillsSection = document.querySelector('.skills');
+    const skillLevels = document.querySelectorAll('.skill-level');
+    
+    function animateSkills() {
+        skillLevels.forEach(bar => {
+            const targetWidth = bar.getAttribute('data-percent');
+            bar.style.width = targetWidth;
+        });
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateSkills();
+                observer.unobserve(skillsSection);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    observer.observe(skillsSection);
+    
+});
+</script>
+    <script src="java.js"></script>
+</body>
+</html>
