@@ -150,40 +150,89 @@
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Project 1">
-                <div class="project-info">
-                    <h3>E-commerce Website</h3>
-                    <p>A full-featured online store with product listings, cart functionality, and payment processing.</p>
-                    <div class="project-tech">
-                        <span>HTML 5</span>
-                        <span>CSS 3</span>
-                        <span>Javascript </span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://shop-ease-web.vercel.app/index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
-                        <a href="https://github.com/Damilee2010/shop-ease" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <!-- Filter buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX Projects</button>
+            </div>
+            
+            <!-- Projects grid -->
+            <div class="projects-container">
+                <!-- Web Development Projects -->
+                <div class="project-card" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="E-commerce Website">
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A full-featured online store with product listings, cart functionality, and payment processing.</p>
+                        <div class="project-tech">
+                            <span>HTML 5</span>
+                            <span>CSS 3</span>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://shop-ease-web.vercel.app/index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="https://github.com/Damilee2010/shop-ease" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Project 2">
-                <div class="project-info">
-                    <h3>Task Management App</h3>
-                    <p>A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.</p>
-                    <div class="project-tech">
-                        <span>Vue.js</span>
-                        <span>Firebase</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                
+                <div class="project-card" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Task Management App">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-  <div class="project-card">
+                
+                <!-- UI/UX Projects -->
+                <div class="project-card" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Mobile Banking App">
+                    <div class="project-info">
+                        <h3>Mobile Banking App</h3>
+                        <p>User-friendly banking interface with seamless transaction flows and intuitive navigation.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                            <span>User Testing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            <a href="#"><i class="fab fa-dribbble"></i> Design</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Travel App">
+                    <div class="project-info">
+                        <h3>Travel Booking App</h3>
+                        <p>Intuitive travel planning experience with personalized recommendations and booking system.</p>
+                        <div class="project-tech">
+                            <span>Sketch</span>
+                            <span>User Flows</span>
+                            <span>Wireframing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            <a href="#"><i class="fab fa-behance"></i> Design</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mixed Projects -->
+                <div class="project-card" data-category="web">
                     <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hope for All">
                     <div class="project-info">
                         <h3>Hope for All</h3>
@@ -199,6 +248,24 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="project-card" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Fitness Tracker">
+                    <div class="project-info">
+                        <h3>Fitness Tracker</h3>
+                        <p>Health and wellness app with workout tracking, nutrition planning, and progress visualization.</p>
+                        <div class="project-tech">
+                            <span>UI Design</span>
+                            <span>User Research</span>
+                            <span>Interaction Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            <a href="#"><i class="fab fa-figma"></i> Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
