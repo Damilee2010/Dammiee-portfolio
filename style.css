@@ -445,6 +445,175 @@ s/* ===== Skills Section ===== */
 .skill-item:nth-child(6) { animation-delay: 0.6s; }
 
 /* ===== Projects Section ===== */
+ .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            padding: 10px 25px;
+            background: #f0f0f0;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .filter-btn:hover {
+            background: #3a36e0;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(58, 54, 224, 0.3);
+        }
+        
+        .filter-btn.active {
+            background: #3a36e0;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(58, 54, 224, 0.3);
+        }
+        
+        /* Projects section */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            background: white;
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+        }
+        
+        .project-card.hidden {
+            display: none;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .project-info {
+            padding: 25px;
+        }
+        
+        .project-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .project-info p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .project-tech span {
+            background: #eef2ff;
+            color: #3a36e0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-links a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: #3a36e0;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        
+        .project-links a:hover {
+            background: #f0f0ff;
+        }
+        
+        .project-links a i {
+            font-size: 0.9rem;
+        }
+        
+        /* Animation for project filtering */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .project-card.animate-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+            
+            .filter-buttons {
+                gap: 10px;
+            }
+            
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .filter-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 80%;
+                max-width: 250px;
+            }
+        }
 .projects {
     padding: 80px 40px;
 }
