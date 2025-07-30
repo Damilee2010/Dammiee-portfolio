@@ -131,6 +131,45 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Filter projects when a button is clicked
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filter = button.dataset.filter;
+                    
+                    // Filter projects
+                    projectCards.forEach((card, index) => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.classList.remove('hidden');
+                            card.classList.add('animate-in');
+                            
+                            // Add delay for staggered animation
+                            card.style.animationDelay = `${index * 0.1}s`;
+                        } else {
+                            card.classList.add('hidden');
+                            card.classList.remove('animate-in');
+                        }
+                    });
+                });
+            });
+            
+            // Initialize with all projects showing
+            projectCards.forEach((card, index) => {
+                card.classList.add('animate-in');
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
     
     // Testimonial Carousel
     const carouselInner = document.querySelector('.carousel-inner');
