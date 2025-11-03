@@ -570,7 +570,31 @@ s/* ===== Skills Section ===== */
         .project-links a i {
             font-size: 0.9rem;
         }
-        
+
+/* View All Projects Button */
+.view-all-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.view-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
         /* Animation for project filtering */
         @keyframes fadeIn {
             from {
@@ -1135,3 +1159,4 @@ footer {
         height: 300px; /* Further reduced size */
     }
 }
+
