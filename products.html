@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Dammiee's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the products page */
+        .products-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .products-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+        
+        .back-btn i {
+            margin-right: 8px;
+        }
+        
+        .all-projects-section {
+            padding: 80px 0;
+        }
+        
+        .all-projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .project-card-large {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card-large:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-image-large {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .project-image-large img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card-large:hover .project-image-large img {
+            transform: scale(1.05);
+        }
+        
+        .project-info-large {
+            padding: 25px;
+        }
+        
+        .project-info-large h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .project-info-large p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .project-tech-large {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .project-tech-large span {
+            background: #f1f1f1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        .project-links-large {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-links-large a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .project-links-large a:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+        
+        .project-links-large a:nth-child(2) {
+            background: #333;
+        }
+        
+        .project-links-large a:nth-child(2):hover {
+            background: #222;
+        }
+        
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dammiee</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>  
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products-header">
+        <div class="container">
+            <h1>All Projects</h1>
+            <p>Explore my complete portfolio of web development and design projects</p>
+            <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+        </div>
+    </section>
+
+    <section class="all-projects-section">
+        <div class="all-projects-container">
+            <div class="project-grid">
+                <!-- E-commerce Website -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="E-commerce Website">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>E-commerce Website</h3>
+                        <p>A full-featured online store with product listings, cart functionality, and payment processing. Built with modern web technologies to provide a seamless shopping experience.</p>
+                        <div class="project-tech-large">
+                            <span>HTML 5</span>
+                            <span>CSS 3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="https://shop-ease-web.vercel.app/index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Damilee2010/shop-ease" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cloudlytics Analytics -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Cloudlytics Dashboard">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Cloudlytics Analytics</h3>
+                        <p>A powerful web analytics platform that provides actionable insights with real-time data tracking, audience segmentation, and custom reporting. Features interactive dashboards and detailed analytics.</p>
+                        <div class="project-tech-large">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Data Visualization</span>
+                            <span>API Integration</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="https://cloudlytics.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Damilee2010/Cloudlytics" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Campus Connect -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Campus Connect Platform">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Campus Connect</h3>
+                        <p>A comprehensive campus platform for student connectivity, resource sharing, and academic collaboration. Includes features like event management, study groups, and campus news.</p>
+                        <div class="project-tech-large">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Web App</span>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="https://campus-connect-opal.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Damilee2010/CampusConnect" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chic Lighting and Design -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Chic Lighting and Design">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Chic Lighting and Design</h3>
+                        <p>An elegant e-commerce website specializing in modern lighting solutions and interior design products. Features product filtering, detailed product pages, and a streamlined checkout process.</p>
+                        <div class="project-tech-large">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>E-commerce</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="https://chic-lighting-and-design.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Damilee2010/chic-lighting-and-design" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hope for All -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hope for All">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Hope for All</h3>
+                        <p>A mental health NGO platform connecting users with licensed therapists through secure video sessions and messaging. Includes resources, community forums, and emergency support features.</p>
+                        <div class="project-tech-large">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Mental Health</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="https://hope-for-all-eight.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Damilee2010/hope-for-all/" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fitness Tracker -->
+                <div class="project-card-large">
+                    <div class="project-image-large">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Fitness Tracker">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Fitness Tracker</h3>
+                        <p>Health and wellness app with workout tracking, nutrition planning, and progress visualization. Features personalized workout plans, progress charts, and social sharing capabilities.</p>
+                        <div class="project-tech-large">
+                            <span>UI Design</span>
+                            <span>User Research</span>
+                            <span>Interaction Design</span>
+                            <span>Figma</span>
+                        </div>
+                        <div class="project-links-large">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            <a href="#"><i class="fab fa-figma"></i> Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dammiee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
